@@ -1,0 +1,12 @@
+﻿Extension Name: Opencart 2.3.0.2 简体中文语言包
+Agreement
+
+Author: Yang Zhao Feng
+版权作者：杨兆锋
+E-mail: opencartchina@qq.com
+Skype: opencartchina
+QQ: 1487063622
+Website: http://www.opencartchina.com
+
+安装方法请参考：  http://www.mycncart.com/blog-60.html
+
