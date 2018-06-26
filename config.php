@@ -5,7 +5,7 @@ define('HTTP_SERVER', 'http://www.beutii.net/');
 // HTTPS
 define('HTTPS_SERVER', 'http://www.beutii.net/');
 
-define('DIR_PREFIX', 'C:\Projects');///home/wwwroot
+define('DIR_PREFIX', 'C:/xampp/htdocs');///home/wwwroot
 
 // DIR
 define('DIR_APPLICATION', DIR_PREFIX . '/beutii.net/catalog/');

@@ -7,7 +7,9 @@ define('HTTP_CATALOG', 'http://www.beutii.net/');
 define('HTTPS_SERVER', 'http://www.beutii.net/admin/');
 define('HTTPS_CATALOG', 'http://www.beutii.net/');
 
-define('DIR_PREFIX', 'C:\Projects');///home/wwwroot
+//home/wwwroot
+define('DIR_PREFIX', 'C:/xampp/htdocs');
+
 
 // DIR
 define('DIR_APPLICATION', DIR_PREFIX . '/beutii.net/admin/');
