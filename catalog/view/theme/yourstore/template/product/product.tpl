@@ -495,7 +495,7 @@ if (!isset($image_size)) {$image_size  = 'default';}
                                 <div class="divider divider--xs visible-xs"></div>
                                 <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
 
-                                <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn--ys btn--xxl">
+                                <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn--ys btn--xxl" sku="<?php echo $sku; ?>">
                                         <span class="icon icon-shopping_basket"></span><?php echo $button_cart; ?>
                                 </button>
                                 <div class="divider divider--xs visible-xs"></div>
@@ -513,7 +513,7 @@ if (!isset($image_size)) {$image_size  = 'default';}
                                     </div>
                                     <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
                                     <div class="pull-left">
-                                        <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn--ys btn--xxl">
+                                        <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn--ys btn--xxl" sku="<?php echo $sku; ?>">
                                             <span class="icon icon-shopping_basket"></span><?php echo $button_cart; ?>
                                         </button>
                                     </div>
@@ -816,7 +816,7 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 //--></script>
 <script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
-	$.ajax({
+	/*$.ajax({
 		url: 'index.php?route=checkout/cart/add',
 		type: 'post',
 		data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
@@ -913,7 +913,13 @@ $('#button-cart').on('click', function() {
         error: function(xhr, ajaxOptions, thrownError) {
             alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
         }
-	});
+	});*/
+
+	//Change to "Buy from amazon"
+    var amazonUrl = "https://www.amazon.com/";
+    var sku = $(this).attr("sku");
+    var amazonProductUrl = amazonUrl + "dp/" + sku;
+    window.open(amazonProductUrl);
 });
 //--></script>
 <script type="text/javascript"><!--
