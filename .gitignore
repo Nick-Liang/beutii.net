@@ -50,9 +50,9 @@ node_modules
 ehthumbs.db
 Thumbs.db
 .project
-/system/storage/cache/*
-/image/cache/*
 *.idea
 .buildpath
 .settings
 *.vlt
+system/storage/cache/
+image/cache/catalog/
