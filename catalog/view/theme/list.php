@@ -20,7 +20,7 @@ if (isset($customisation_general["layoutid"][$store_id])) {
                         </div>
         <?php endif; ?>
                         <!-- /title -->
-                        <div class="product-listing carousel-products-mobile row">
+                        <div class="product-listing row">
         <?php endif; ?>
 
                 <?php
@@ -259,7 +259,7 @@ foreach ($products as $product) :
                                                 <?php endif; ?>
                                             <?php endif; ?>
                                             <!-- /product review -->
-                                            <div class="product__inside__hover">
+                                            <?php /*<div class="product__inside__hover">
                                                 <!-- product info -->
                                                 <div class="product__inside__info">
                                                     <div class="product__inside__info__btns">
@@ -298,7 +298,7 @@ foreach ($products as $product) :
                                                 </div>
                                                 <?php endif; ?>
                                                 <!-- /product rating -->
-                                            </div>
+                                            </div>*/ ?>
                                         </div>
                                     </div>
                                     <!-- /product -->
