@@ -71,7 +71,7 @@ if (isset($_GET['sku'])){$sku = $_GET['sku'];}
 				<div class="divider divider--sm"></div>
 				<div class="wrapper">
 					<div class="pull-left">
-                        quick-view               <button onclick="window.open('https://www.amazon.com/dp/<?php echo $sku; ?>')" type="submit" class="btn btn--ys btn--xxl" sku="<?php echo $sku; ?>">
+                        <button onclick="window.open('https://www.amazon.com/dp/<?php echo $sku; ?>')" type="submit" class="btn btn--ys btn--xxl" sku="<?php echo $sku; ?>">
                             <span class="icon icon-shopping_basket"></span> <?php echo $button_cart; ?>
                         </button>
                     </div>
