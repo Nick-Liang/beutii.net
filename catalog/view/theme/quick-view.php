@@ -26,6 +26,7 @@ if (isset($_GET['button_cart'])){$button_cart = $_GET['button_cart'];}
 if (isset($_GET['button_wishlist'])){$button_wishlist = $_GET['button_wishlist'];}
 if (isset($_GET['button_compare'])){$button_compare = $_GET['button_compare'];}
 if (isset($_GET['brand_image'])){$brand_image = $_GET['brand_image'];}
+if (isset($_GET['sku'])){$sku = $_GET['sku'];}
 
 ?>
 
@@ -70,7 +71,7 @@ if (isset($_GET['brand_image'])){$brand_image = $_GET['brand_image'];}
 				<div class="divider divider--sm"></div>
 				<div class="wrapper">
 					<div class="pull-left">
-                        <button onclick="cart_theme.add('<?php echo $product_id; ?>');" type="submit" class="btn btn--ys btn--xxl">
+                        quick-view               <button onclick="window.open('https://www.amazon.com/dp/<?php echo $sku; ?>')" type="submit" class="btn btn--ys btn--xxl" sku="<?php echo $sku; ?>">
                             <span class="icon icon-shopping_basket"></span> <?php echo $button_cart; ?>
                         </button>
                     </div>

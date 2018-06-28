@@ -82,7 +82,8 @@
 
         // popup ini
         $j('.quick-view').magnificPopup({
-            type: 'ajax'
+            type: 'ajax',
+            disableOn: 767
         });
 
         // Init All Carousel
